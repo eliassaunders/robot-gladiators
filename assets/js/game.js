@@ -102,7 +102,7 @@ var startGame = function () {// fight each enemy-robot by looping over them and 
 
 var endGame = function() {
  if (playerHealth > 0) {
-   window.alert("Great job, you've survived the game! You now have a score of " + playerMoney + ".")
+   window.alert("Great job, you've survived the game! You have a score of " + playerMoney + ".")
  } else {
    window.alert("You've lost your robot in battle.")
  }
