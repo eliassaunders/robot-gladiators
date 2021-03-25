@@ -1,6 +1,6 @@
 var playerName = window.prompt("What is your robot's name?");
 var playerHealth = 100;
-var playerAttack = 60;
+var playerAttack = 10;
 var playerMoney = 10;
 
 var enemyNames = ['Roborto', 'Amy Android', 'Robo Trumble'];
@@ -71,7 +71,7 @@ var fight = function (enemyName) {
 
 var startGame = function () {// fight each enemy-robot by looping over them and fighting them one at a time
   playerHEalth = 100;
-  playerAttack = 60;
+  playerAttack = 10;
   playerMoney = 10;
   for (var i = 0; i < enemyNames.length; i++) {
     // if player is still alive, keep fighting
@@ -102,7 +102,7 @@ var startGame = function () {// fight each enemy-robot by looping over them and 
 
 var endGame = function() {
  if (playerHealth > 0) {
-   window.alert("Great job, you've survived the game! You now have a score" + playerMoney + ".")
+   window.alert("Great job, you've survived the game! You now have a score of " + playerMoney + ".")
  } else {
    window.alert("You've lost your robot in battle.")
  }
