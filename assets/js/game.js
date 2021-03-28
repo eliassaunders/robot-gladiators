@@ -144,19 +144,16 @@ var shop = function () {
   );
 
   // use switch case to carry out action
+  debugger;
   switch (shopOptionPrompt) {
-    case 'REFILL':
-    case 'refill':
+    case 1:
       playerInfo.refillHealth();
       break;
-    case 'UPGRADE':
-    case 'upgrade':
+    case 2:
       playerInfo.upgradeAttack();
       break;
-    case 'LEAVE':
-    case 'leave':
-      window.alert('Leaving the store.');
-
+    case 3: 
+      window.alert("Leaving the store.");
       // do nothing, so function will end
       break;
     default:
